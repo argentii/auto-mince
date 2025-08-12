@@ -8,12 +8,12 @@ clicking = False
 
 while True:
     if keyboard.is_pressed("s"):
-        clicking = not clicking  # clicking == True
+        clicking = not clicking 
         if clicking:
             print("Clicking:") 
         else: 
             print("Paused")
-        time.sleep(0.3)  # debounce toggle
+        time.sleep(0.3)  # debounce for toggle
 
     if keyboard.is_pressed("q"):
         print("Quitting.")
@@ -21,4 +21,5 @@ while True:
 
     if clicking:
         pyautogui.click()
-        time.sleep(0.1)  # adjust click speed
+        time.sleep(0.1)  # change to adjust click speed
+
